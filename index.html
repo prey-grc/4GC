@@ -3,6 +3,12 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+				<style>
+					html, body {
+						overflow-x: hidden;
+						max-width: 100vw;
+					}
+				</style>
 		<title>4GC AND ARJILL CONCRETE BATCHING PLANT CO.</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
@@ -558,12 +564,21 @@ The company also provide boom concrete pump and mobile line pump rental.
 			</div>
 		</footer>
 		<script>
-			// Mobile menu functionality
-			const menuToggle = document.querySelector('.menu-toggle');
-			const nav = document.querySelector('.nav');
-			menuToggle?.addEventListener('click', () => {
-				nav.classList.toggle('nav--mobile-hidden');
-			});
+						// Mobile menu functionality
+						const menuToggle = document.querySelector('.menu-toggle');
+						const nav = document.querySelector('.nav');
+						const navLinks = document.querySelectorAll('.nav__link');
+						menuToggle?.addEventListener('click', () => {
+								nav.classList.toggle('nav--mobile-hidden');
+						});
+						// Close menu after clicking a link (for mobile UX)
+						navLinks.forEach(link => {
+							link.addEventListener('click', () => {
+								if (window.innerWidth <= 900) {
+									nav.classList.add('nav--mobile-hidden');
+								}
+							});
+						});
 			const emailOpen = document.getElementById("email-open");
 			const emailModal = document.getElementById("email-modal");
 			const emailForm = document.getElementById("email-form");
