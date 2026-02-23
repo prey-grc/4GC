@@ -55,6 +55,7 @@ The site features:
 ├── scripts.js (optional external script)
 └── README.md
 
+
 Installation
 1. Clone the repository
 git clone https://github.com/prey-grc/4GC.git
@@ -137,7 +138,7 @@ Open a Pull Request
 
 This project is open source — feel free to use or customize.
 
-🧑‍💻 Author
+🧑‍💻 Author: Abion, P., Garcia, A., Hernandez, D.
 
 4GC AND ARJILL CONCRETE BATCHING PLANT CO.
 Official site developed and maintained by the 4GC web team
@@ -151,3 +152,4 @@ Phone: (000) 000-0000
 Website: https://prey-grc.github.io/4GC/
 
 Thank you for viewing this project! 🚧 concrete this into reality ✨
+
