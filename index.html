@@ -794,6 +794,15 @@ The company also provide boom concrete pump and mobile line pump rental.
 				});
 			}
 		});
+
+		// Adjust body padding to match fixed header height
+const updateHeaderOffset = () => {
+	const headerHeight = headerEl.offsetHeight;
+	document.body.style.paddingTop = headerHeight + "px";
+};
+
+updateHeaderOffset();
+window.addEventListener("resize", updateHeaderOffset);
 	</script>
 	</body>
 	</html>
