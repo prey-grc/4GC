@@ -1,3 +1,7 @@
+html, body {
+	overflow-x: hidden;
+	max-width: 100vw;
+}
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap");
 
 /* Base styles */
@@ -171,8 +175,8 @@ a {
 
 .btn {
 	display: inline-block;
-	background: linear-gradient(135deg, #0f172a, #1f2a37);
-	color: #f8fafc;
+	background: #f59e0b;
+	color: #fff;
 	padding: 12px 20px;
 	border-radius: 6px;
 	border: none;
@@ -1318,4 +1322,46 @@ a {
         box-shadow: none;
         color: #e2e8f0;
     }
+}
+
+@media (max-width: 900px) {
+	.quality-header {
+		flex-direction: column;
+		gap: 4px;
+		text-align: center;
+	}
+	.quality-header__title,
+	.quality-header__subtitle {
+		font-size: 1.1rem;
+	}
+	.quality-header__divider {
+		display: none;
+	}
+	.quality-grid {
+		grid-template-columns: 1fr !important;
+		gap: 14px;
+	}
+	.quality-card {
+		grid-template-columns: 38px 1fr;
+		padding: 12px 10px;
+		font-size: 0.97rem;
+		width: 100%;
+		min-width: 0;
+		box-sizing: border-box;
+	}
+	.quality-card__icon {
+		width: 32px;
+		height: 32px;
+	}
+	.quality-card__icon svg {
+		width: 16px;
+		height: 16px;
+	}
+	.quality-card__title {
+		font-size: 1rem;
+	}
+	.quality-card__list,
+	.quality-card__text {
+		font-size: 0.97rem;
+	}
 }
