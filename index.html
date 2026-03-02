@@ -673,14 +673,16 @@ The company also provide boom concrete pump and mobile line pump rental.
 			window.addEventListener("scroll", toggleFab, { passive: true });
 		</script>
 	<!-- EmailJS SDK -->
-	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-	<script>
-		(function(){
-			// IMPORTANT: Only use the public key here. Do NOT use the private key in client-side code.
-			emailjs.init("92RSo8uZSq73QBx8S"); // Updated EmailJS Public Key
-		})();
-	</script>
-	
+	<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "DD3LBIQx7MZXWnby4",
+      });
+   })();
+</script>
 
 	<!-- Privacy Policy Modal -->
 
@@ -807,4 +809,3 @@ window.addEventListener("resize", updateHeaderOffset);
 	</script>
 	</body>
 	</html>
-
